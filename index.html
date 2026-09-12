@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Regra de Cramer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+
+        <div id="cabecalho">
+            <div id="titulo">Calculadora</div>
+
+            <div id="info">
+
+                <a href="http://github.com/AlanDeOliveiraSouza/" target="_blank" rel="noopener noreferrer">
+                    <img src="logo_github.png" alt="icone github" id="github">
+                </a>
+            
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id="center">
+
+        <h1>Regra de Cramer</h1>
+        <p>Para realizar o cálculo, insira os valores nos campos correspondentes.</p>
+
+        <form id="form">
+
+            <div id="campos">
+                <input type="number" name="x1" id="x1" class="dado">
+                <p>x&nbsp;&nbsp;&nbsp;&nbsp;+</p>
+                <input type="number" name="y1" id="y1" class="dado">
+                <p>y&nbsp;&nbsp;&nbsp;&nbsp;=</p>
+                <input type="number" name="r1" id="r1" class="dado">
+            </div>
+
+            <div id="campos">
+                <input type="number" name="x2" id="x2" class="dado">
+                <p>x&nbsp;&nbsp;&nbsp;&nbsp;+</p>
+                <input type="number" name="y2" id="y2" class="dado">
+                <p>y&nbsp;&nbsp;&nbsp;&nbsp;=</p>
+                <input type="number" name="r2" id="r2" class="dado">
+            </div>
+
+            <div id="botoes">
+                <input type="button" value="Confirmar" onclick="executarCalculo()" class="botao">
+                <input type="button" value="Limpar" onclick="limparDados()" class="botao" id="limpar">
+            </div>
+
+        </form>
+
+        <hr>
+
+        <p id="result_texto">Resultados:</p>
+
+        <div id="resultados">
+
+            <div class="resultados"><p class="resultado" id="d"></p></div>
+            <div class="resultados"><p class="resultado" id="dx"></p></div>
+            <div class="resultados"><p class="resultado" id="dy"></p></div>
+            <div class="resultados inc"><p class="resultado" id="saidaX"></p></div>
+            <div class="resultados inc"><p class="resultado" id="saidaY"></p></div>
+            
+        </div>
+
+        <div id="mensagem"></div>
+
+    </div>
+
+    <footer>
+
+        <p>Alan de Oliveira Souza - ADS / Vespertino - 2026-2</p>
+
+    </footer>
+
+</body>
+</html>

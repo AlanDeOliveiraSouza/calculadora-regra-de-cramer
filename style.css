@@ -1,0 +1,140 @@
+/* Estilo - Projeto: Calculadora Regra de Cramer */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    display: flex;
+    height: 60px;
+    padding: 0px 20px 0px 20px;
+    background-color: #0066b9;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#cabecalho {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#titulo {
+    display: flex;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+#github {
+    height: 40px;
+    width: 40px;
+}
+
+#info {
+    display: flex;
+}
+
+#center {
+    flex: 1;
+    margin: 20px 50px 20px 50px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#campos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.dado {
+    flex: 1;
+    height: 30px;
+    max-width: 60px;
+}
+
+.botao {
+    color: #ffffff;
+    background-color: #0066b9;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 4px;
+    min-width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #004a86;
+}
+
+#limpar {
+    background-color:#84c4fc; 
+    color: black;
+}
+
+#limpar:hover {
+    background-color: #52aeff;
+}
+
+#result_texto {
+    padding-top: 20px;
+}
+
+#resultados {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.resultados {
+    flex: 1;
+    min-width: 100px;
+    min-height: 30px;
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.inc {
+    border: 1px solid #0066b9;
+    color: #0066b9
+}
+
+#mensagem {
+    margin: 20px 0px;
+    color: #7d0000;
+    justify-content: center;
+    text-align: center;
+}
