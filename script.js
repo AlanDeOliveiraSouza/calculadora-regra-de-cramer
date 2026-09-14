@@ -28,9 +28,13 @@ function calcularY(d, dy) {
 }
 
 // função principal executada ao pressionar botão
-function executarCalculo(detalhes) {
+function executarCalculo() {
 
-    // Primeiro, o campo de mensagem é limpo (caso haja alguma mensagem)
+    // Primeiro, os campos de texto são limpos (caso haja alguma saída ou mensagem)
+    document.querySelectorAll(".resultado").forEach(resultado => {
+        resultado.innerText = ""
+    })
+
     document.getElementById("mensagem").innerText = ""
 
     // Recebendo valores do formulário
