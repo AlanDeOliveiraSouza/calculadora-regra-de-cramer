@@ -30,6 +30,9 @@ function calcularY(d, dy) {
 // função principal executada ao pressionar botão
 function executarCalculo(detalhes) {
 
+    // Primeiro, o campo de mensagem é limpo (caso haja alguma mensagem)
+    document.getElementById("mensagem").innerText = ""
+
     // Recebendo valores do formulário
     let x1 = Number(document.getElementById("x1").value)
     let x2 = Number(document.getElementById("x2").value)
